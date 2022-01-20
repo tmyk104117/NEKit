@@ -50,7 +50,7 @@ public final class ConnectSession {
                 return ip
             }
             
-            guard let address = IPAddress(fromString: ip) else {
+            guard let address = NEIPAddress(fromString: ip) else {
                 return ip
             }
             
@@ -89,7 +89,7 @@ public final class ConnectSession {
         }
     }
     
-    public convenience init?(ipAddress: IPAddress, port: Port, fakeIPEnabled: Bool = true) {
+    public convenience init?(ipAddress: NEIPAddress, port: Port, fakeIPEnabled: Bool = true) {
         self.init(host: ipAddress.presentation, port: Int(port.value), fakeIPEnabled: fakeIPEnabled)
     }
     
@@ -114,7 +114,7 @@ public final class ConnectSession {
             return true
         }
         
-        let address = IPAddress(fromString: requestedHost)!
+        let address = NEIPAddress(fromString: requestedHost)!
         guard dnsServer.isFakeIP(address) else {
             return true
         }

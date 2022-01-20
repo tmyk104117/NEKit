@@ -29,7 +29,7 @@ public class NWTCPSocket: NSObject, RawTCPSocketProtocol {
     /// The source address.
     ///
     /// - note: Always returns `nil`.
-    public var sourceIPAddress: IPAddress? {
+    public var sourceIPAddress: NEIPAddress? {
         return nil
     }
 
@@ -43,7 +43,7 @@ public class NWTCPSocket: NSObject, RawTCPSocketProtocol {
     /// The destination address.
     ///
     /// - note: Always returns `nil`.
-    public var destinationIPAddress: IPAddress? {
+    public var destinationIPAddress: NEIPAddress? {
         return nil
     }
 

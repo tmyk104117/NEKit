@@ -17,10 +17,6 @@
 		361176641E00361600A1A058 /* CryptoStreamProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361176621E00361600A1A058 /* CryptoStreamProcessor.swift */; };
 		3621B9491DFA92480003ABB3 /* GlobalIntializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621B9481DFA92480003ABB3 /* GlobalIntializer.swift */; };
 		3621B94A1DFA92480003ABB3 /* GlobalIntializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621B9481DFA92480003ABB3 /* GlobalIntializer.swift */; };
-		362347181D7D44E700A047DE /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36463A301CDCD5EB0040579C /* NEKit.framework */; };
-		362347271D7D458E00A047DE /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C48D4D1CF88DED0071804F /* NEKit.framework */; };
-		362347401D7E706300A047DE /* IPRangeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623473F1D7E706300A047DE /* IPRangeSpec.swift */; };
-		362347411D7E706300A047DE /* IPRangeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623473F1D7E706300A047DE /* IPRangeSpec.swift */; };
 		362347A01D824E4300A047DE /* SOCKS5Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623479F1D824E4300A047DE /* SOCKS5Adapter.swift */; };
 		362347A11D824E4300A047DE /* SOCKS5Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623479F1D824E4300A047DE /* SOCKS5Adapter.swift */; };
 		362347A31D82525200A047DE /* SOCKS5AdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362347A21D82525200A047DE /* SOCKS5AdapterFactory.swift */; };
@@ -39,7 +35,7 @@
 		362950551D6AE3B6001A30F6 /* RuleMatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362950531D6AE3B6001A30F6 /* RuleMatchEvent.swift */; };
 		362990C31D55890C00D11EBA /* GCDSOCKS5ProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362990C21D55890C00D11EBA /* GCDSOCKS5ProxyServer.swift */; };
 		362990C41D55890C00D11EBA /* GCDSOCKS5ProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362990C21D55890C00D11EBA /* GCDSOCKS5ProxyServer.swift */; };
-		3636DA5E1CE87C08007F9787 /* IPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636DA5D1CE87C08007F9787 /* IPAddress.swift */; };
+		3636DA5E1CE87C08007F9787 /* NEIPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636DA5D1CE87C08007F9787 /* NEIPAddress.swift */; };
 		3636DA621CE892EF007F9787 /* Port.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636DA611CE892EF007F9787 /* Port.swift */; };
 		36411A551D12C123005F4108 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36411A541D12C123005F4108 /* Atomic.swift */; };
 		36411A561D12C123005F4108 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36411A541D12C123005F4108 /* Atomic.swift */; };
@@ -159,7 +155,7 @@
 		36C48D661CF88EBC0071804F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366EB5BF1CDE32CD00E0E942 /* Configuration.swift */; };
 		36C48D671CF88EBC0071804F /* RuleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366EB5C81CE061C500E0E942 /* RuleParser.swift */; };
 		36C48D681CF88EC10071804F /* GeoIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B162611CDDADC100F24C97 /* GeoIP.swift */; };
-		36C48D6A1CF88ECB0071804F /* IPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636DA5D1CE87C08007F9787 /* IPAddress.swift */; };
+		36C48D6A1CF88ECB0071804F /* NEIPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636DA5D1CE87C08007F9787 /* NEIPAddress.swift */; };
 		36C48D6C1CF88ECB0071804F /* Port.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636DA611CE892EF007F9787 /* Port.swift */; };
 		36C48D701CF88ECB0071804F /* TUNInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E44A011CF2ED4800185DBF /* TUNInterface.swift */; };
 		36C48D711CF88ECF0071804F /* ProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B162571CDDA31B00F24C97 /* ProxyServer.swift */; };
@@ -209,8 +205,6 @@
 		36CB0D391D51E06700DB7AF5 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB0D371D51E06700DB7AF5 /* HTTPHeader.swift */; };
 		36D4007D1E07E48B00583102 /* HTTPURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4007C1E07E48B00583102 /* HTTPURL.swift */; };
 		36D4007E1E07E48B00583102 /* HTTPURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4007C1E07E48B00583102 /* HTTPURL.swift */; };
-		36D400801E07E8A100583102 /* HTTPURLSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4007F1E07E8A100583102 /* HTTPURLSpec.swift */; };
-		36D400811E07E8A100583102 /* HTTPURLSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4007F1E07E8A100583102 /* HTTPURLSpec.swift */; };
 		36D591BE1D6C40F2003E92B2 /* IPRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D591BD1D6C40F2003E92B2 /* IPRange.swift */; };
 		36D591BF1D6C40F2003E92B2 /* IPRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D591BD1D6C40F2003E92B2 /* IPRange.swift */; };
 		36D591C11D6C4895003E92B2 /* IPRangeListRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D591C01D6C4895003E92B2 /* IPRangeListRule.swift */; };
@@ -221,39 +215,54 @@
 		36DB3CE81E0CD17100D907DB /* IPInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CE61E0CD17100D907DB /* IPInterval.swift */; };
 		36DB3CEA1E0CD19000D907DB /* IPMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CE91E0CD19000D907DB /* IPMask.swift */; };
 		36DB3CEB1E0CD19000D907DB /* IPMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CE91E0CD19000D907DB /* IPMask.swift */; };
-		36DB3CEF1E0D610500D907DB /* IPAddressSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */; };
-		36DB3CF01E0D610500D907DB /* IPAddressSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */; };
 		36E44A021CF2ED4800185DBF /* TUNInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E44A011CF2ED4800185DBF /* TUNInterface.swift */; };
 		36E9CCFF1DD6EEF5003597CE /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */; };
 		36E9CD001DD6EEF5003597CE /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */; };
-		A29D4F112797FF3B007B4C2E /* CocoaLumberjack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F062797FF3A007B4C2E /* CocoaLumberjack.xcframework */; };
-		A29D4F122797FF3B007B4C2E /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F072797FF3A007B4C2E /* CocoaLumberjackSwift.xcframework */; };
-		A29D4F132797FF3B007B4C2E /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F082797FF3A007B4C2E /* Quick.xcframework */; };
-		A29D4F142797FF3B007B4C2E /* Resolver.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F092797FF3A007B4C2E /* Resolver.xcframework */; };
-		A29D4F152797FF3B007B4C2E /* tun2socks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F0A2797FF3B007B4C2E /* tun2socks.xcframework */; };
-		A29D4F162797FF3B007B4C2E /* lwip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F0B2797FF3B007B4C2E /* lwip.xcframework */; };
-		A29D4F172797FF3B007B4C2E /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F0C2797FF3B007B4C2E /* Nimble.xcframework */; };
-		A29D4F182797FF3B007B4C2E /* MMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F0D2797FF3B007B4C2E /* MMDB.xcframework */; };
-		A29D4F192797FF3B007B4C2E /* CocoaAsyncSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F0E2797FF3B007B4C2E /* CocoaAsyncSocket.xcframework */; };
-		A29D4F1A2797FF3B007B4C2E /* Sodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F0F2797FF3B007B4C2E /* Sodium.xcframework */; };
-		A29D4F1B2797FF3B007B4C2E /* Yaml.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F102797FF3B007B4C2E /* Yaml.xcframework */; };
+		A27E848A279862D5004CAD6C /* Yaml.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8483279862D5004CAD6C /* Yaml.xcframework */; };
+		A27E848B279862D5004CAD6C /* Yaml.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8483279862D5004CAD6C /* Yaml.xcframework */; };
+		A27E848C279862D5004CAD6C /* Yaml.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8483279862D5004CAD6C /* Yaml.xcframework */; };
+		A27E848D279862D5004CAD6C /* Yaml.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8483279862D5004CAD6C /* Yaml.xcframework */; };
+		A27E848E279862D5004CAD6C /* Resolver.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8484279862D5004CAD6C /* Resolver.xcframework */; };
+		A27E848F279862D5004CAD6C /* Resolver.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8484279862D5004CAD6C /* Resolver.xcframework */; };
+		A27E8490279862D5004CAD6C /* Resolver.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8484279862D5004CAD6C /* Resolver.xcframework */; };
+		A27E8491279862D5004CAD6C /* Resolver.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8484279862D5004CAD6C /* Resolver.xcframework */; };
+		A27E8492279862D5004CAD6C /* Sodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8485279862D5004CAD6C /* Sodium.xcframework */; };
+		A27E8493279862D5004CAD6C /* Sodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8485279862D5004CAD6C /* Sodium.xcframework */; };
+		A27E8494279862D5004CAD6C /* Sodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8485279862D5004CAD6C /* Sodium.xcframework */; };
+		A27E8495279862D5004CAD6C /* Sodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8485279862D5004CAD6C /* Sodium.xcframework */; };
+		A27E8496279862D5004CAD6C /* lwip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8486279862D5004CAD6C /* lwip.xcframework */; };
+		A27E8497279862D5004CAD6C /* lwip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8486279862D5004CAD6C /* lwip.xcframework */; };
+		A27E8498279862D5004CAD6C /* lwip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8486279862D5004CAD6C /* lwip.xcframework */; };
+		A27E8499279862D5004CAD6C /* lwip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8486279862D5004CAD6C /* lwip.xcframework */; };
+		A27E849A279862D5004CAD6C /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8487279862D5004CAD6C /* CocoaLumberjackSwift.xcframework */; };
+		A27E849B279862D5004CAD6C /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8487279862D5004CAD6C /* CocoaLumberjackSwift.xcframework */; };
+		A27E849C279862D5004CAD6C /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8487279862D5004CAD6C /* CocoaLumberjackSwift.xcframework */; };
+		A27E849D279862D5004CAD6C /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8487279862D5004CAD6C /* CocoaLumberjackSwift.xcframework */; };
+		A27E849E279862D5004CAD6C /* tun2socks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8488279862D5004CAD6C /* tun2socks.xcframework */; };
+		A27E849F279862D5004CAD6C /* tun2socks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8488279862D5004CAD6C /* tun2socks.xcframework */; };
+		A27E84A0279862D5004CAD6C /* tun2socks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8488279862D5004CAD6C /* tun2socks.xcframework */; };
+		A27E84A1279862D5004CAD6C /* tun2socks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8488279862D5004CAD6C /* tun2socks.xcframework */; };
+		A27E84A2279862D5004CAD6C /* MMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8489279862D5004CAD6C /* MMDB.xcframework */; };
+		A27E84A3279862D5004CAD6C /* MMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8489279862D5004CAD6C /* MMDB.xcframework */; };
+		A27E84A4279862D5004CAD6C /* MMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8489279862D5004CAD6C /* MMDB.xcframework */; };
+		A27E84A5279862D5004CAD6C /* MMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E8489279862D5004CAD6C /* MMDB.xcframework */; };
+		A27E84A7279862DD004CAD6C /* CocoaAsyncSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E84A6279862DD004CAD6C /* CocoaAsyncSocket.xcframework */; };
+		A27E84A8279862DD004CAD6C /* CocoaAsyncSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E84A6279862DD004CAD6C /* CocoaAsyncSocket.xcframework */; };
+		A27E84A9279862DD004CAD6C /* CocoaAsyncSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E84A6279862DD004CAD6C /* CocoaAsyncSocket.xcframework */; };
+		A27E84AA279862DD004CAD6C /* CocoaAsyncSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E84A6279862DD004CAD6C /* CocoaAsyncSocket.xcframework */; };
+		A27E84AC2798631F004CAD6C /* CocoaLumberjack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E84AB2798631F004CAD6C /* CocoaLumberjack.xcframework */; };
+		A27E84AD2798631F004CAD6C /* CocoaLumberjack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E84AB2798631F004CAD6C /* CocoaLumberjack.xcframework */; };
+		A27E84AE2798631F004CAD6C /* CocoaLumberjack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E84AB2798631F004CAD6C /* CocoaLumberjack.xcframework */; };
+		A27E84AF2798631F004CAD6C /* CocoaLumberjack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27E84AB2798631F004CAD6C /* CocoaLumberjack.xcframework */; };
+		A2BB247727985B86006D071E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB247627985B86006D071E /* AppDelegate.swift */; };
+		A2BB247927985B87006D071E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB247827985B86006D071E /* SceneDelegate.swift */; };
+		A2BB247B27985B87006D071E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB247A27985B87006D071E /* ViewController.swift */; };
+		A2BB247E27985B87006D071E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BB247C27985B87006D071E /* Main.storyboard */; };
+		A2BB248027985B87006D071E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2BB247F27985B87006D071E /* Assets.xcassets */; };
+		A2BB248327985B87006D071E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BB248127985B87006D071E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		362347191D7D44E700A047DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36463A271CDCD5EB0040579C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36463A2F1CDCD5EB0040579C;
-			remoteInfo = "NEKit-macOS";
-		};
-		362347281D7D458E00A047DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36463A271CDCD5EB0040579C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36C48D4C1CF88DED0071804F;
-			remoteInfo = "NEKit-iOS";
-		};
 		36A719B91D5EEB5900DC35F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 36463A271CDCD5EB0040579C /* Project object */;
@@ -264,24 +273,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		362347871D7EA64400A047DE /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		362347931D7FC5BF00A047DE /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		36A503F61CF5AC5800D1FC78 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,15 +313,12 @@
 		36164A2C1CE6EB3800BAC90A /* TCPMutablePacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPMutablePacket.swift; sourceTree = "<group>"; };
 		36164A2E1CE7099300BAC90A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3621B9481DFA92480003ABB3 /* GlobalIntializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalIntializer.swift; sourceTree = "<group>"; };
-		362347131D7D44E700A047DE /* NEKitTest-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEKitTest-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		362347171D7D44E700A047DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		362347221D7D458E00A047DE /* NEKitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEKitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		362347261D7D458E00A047DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3623472F1D7D475100A047DE /* bootstrap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bootstrap; sourceTree = "<group>"; };
 		362347301D7D475100A047DE /* bootstrap-if-needed */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "bootstrap-if-needed"; sourceTree = "<group>"; };
 		362347311D7D475100A047DE /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		362347321D7D475100A047DE /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		3623473F1D7E706300A047DE /* IPRangeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPRangeSpec.swift; sourceTree = "<group>"; };
 		362347861D7EA2A500A047DE /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		3623479F1D824E4300A047DE /* SOCKS5Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOCKS5Adapter.swift; sourceTree = "<group>"; };
 		362347A21D82525200A047DE /* SOCKS5AdapterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOCKS5AdapterFactory.swift; sourceTree = "<group>"; };
@@ -341,7 +329,7 @@
 		362950501D6AE396001A30F6 /* TunnelEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelEvent.swift; sourceTree = "<group>"; };
 		362950531D6AE3B6001A30F6 /* RuleMatchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleMatchEvent.swift; sourceTree = "<group>"; };
 		362990C21D55890C00D11EBA /* GCDSOCKS5ProxyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDSOCKS5ProxyServer.swift; sourceTree = "<group>"; };
-		3636DA5D1CE87C08007F9787 /* IPAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddress.swift; sourceTree = "<group>"; };
+		3636DA5D1CE87C08007F9787 /* NEIPAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NEIPAddress.swift; sourceTree = "<group>"; };
 		3636DA611CE892EF007F9787 /* Port.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Port.swift; sourceTree = "<group>"; };
 		36411A541D12C123005F4108 /* Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		36411A581D13988A005F4108 /* GCDHTTPProxyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDHTTPProxyServer.swift; sourceTree = "<group>"; };
@@ -442,49 +430,46 @@
 		36CB0D371D51E06700DB7AF5 /* HTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
 		36CB6DF31D97A89F004D8655 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		36D4007C1E07E48B00583102 /* HTTPURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURL.swift; sourceTree = "<group>"; };
-		36D4007F1E07E8A100583102 /* HTTPURLSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLSpec.swift; sourceTree = "<group>"; };
 		36D591BD1D6C40F2003E92B2 /* IPRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPRange.swift; sourceTree = "<group>"; };
 		36D591C01D6C4895003E92B2 /* IPRangeListRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPRangeListRule.swift; sourceTree = "<group>"; };
 		36DB3CE31E0BCB1600D907DB /* UInt128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt128.swift; sourceTree = "<group>"; };
 		36DB3CE61E0CD17100D907DB /* IPInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPInterval.swift; sourceTree = "<group>"; };
 		36DB3CE91E0CD19000D907DB /* IPMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPMask.swift; sourceTree = "<group>"; };
-		36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressSpec.swift; sourceTree = "<group>"; };
 		36E44A011CF2ED4800185DBF /* TUNInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUNInterface.swift; sourceTree = "<group>"; };
 		36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueFactory.swift; path = Tunnel/QueueFactory.swift; sourceTree = "<group>"; };
-		A29D4F062797FF3A007B4C2E /* CocoaLumberjack.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjack.xcframework; path = Carthage/Build/CocoaLumberjack.xcframework; sourceTree = "<group>"; };
-		A29D4F072797FF3A007B4C2E /* CocoaLumberjackSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjackSwift.xcframework; path = Carthage/Build/CocoaLumberjackSwift.xcframework; sourceTree = "<group>"; };
-		A29D4F082797FF3A007B4C2E /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
-		A29D4F092797FF3A007B4C2E /* Resolver.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Resolver.xcframework; path = Carthage/Build/Resolver.xcframework; sourceTree = "<group>"; };
-		A29D4F0A2797FF3B007B4C2E /* tun2socks.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = tun2socks.xcframework; path = Carthage/Build/tun2socks.xcframework; sourceTree = "<group>"; };
-		A29D4F0B2797FF3B007B4C2E /* lwip.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = lwip.xcframework; path = Carthage/Build/lwip.xcframework; sourceTree = "<group>"; };
-		A29D4F0C2797FF3B007B4C2E /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
-		A29D4F0D2797FF3B007B4C2E /* MMDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MMDB.xcframework; path = Carthage/Build/MMDB.xcframework; sourceTree = "<group>"; };
-		A29D4F0E2797FF3B007B4C2E /* CocoaAsyncSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaAsyncSocket.xcframework; path = Carthage/Build/CocoaAsyncSocket.xcframework; sourceTree = "<group>"; };
-		A29D4F0F2797FF3B007B4C2E /* Sodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sodium.xcframework; path = Carthage/Build/Sodium.xcframework; sourceTree = "<group>"; };
-		A29D4F102797FF3B007B4C2E /* Yaml.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Yaml.xcframework; path = Carthage/Build/Yaml.xcframework; sourceTree = "<group>"; };
+		A27E8483279862D5004CAD6C /* Yaml.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Yaml.xcframework; path = Carthage/Build/Yaml.xcframework; sourceTree = "<group>"; };
+		A27E8484279862D5004CAD6C /* Resolver.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Resolver.xcframework; path = Carthage/Build/Resolver.xcframework; sourceTree = "<group>"; };
+		A27E8485279862D5004CAD6C /* Sodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sodium.xcframework; path = Carthage/Build/Sodium.xcframework; sourceTree = "<group>"; };
+		A27E8486279862D5004CAD6C /* lwip.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = lwip.xcframework; path = Carthage/Build/lwip.xcframework; sourceTree = "<group>"; };
+		A27E8487279862D5004CAD6C /* CocoaLumberjackSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjackSwift.xcframework; path = Carthage/Build/CocoaLumberjackSwift.xcframework; sourceTree = "<group>"; };
+		A27E8488279862D5004CAD6C /* tun2socks.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = tun2socks.xcframework; path = Carthage/Build/tun2socks.xcframework; sourceTree = "<group>"; };
+		A27E8489279862D5004CAD6C /* MMDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MMDB.xcframework; path = Carthage/Build/MMDB.xcframework; sourceTree = "<group>"; };
+		A27E84A6279862DD004CAD6C /* CocoaAsyncSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaAsyncSocket.xcframework; path = Carthage/Build/CocoaAsyncSocket.xcframework; sourceTree = "<group>"; };
+		A27E84AB2798631F004CAD6C /* CocoaLumberjack.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjack.xcframework; path = Carthage/Build/CocoaLumberjack.xcframework; sourceTree = "<group>"; };
+		A2BB247427985B86006D071E /* NEKit-iOSapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NEKit-iOSapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2BB247627985B86006D071E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2BB247827985B86006D071E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A2BB247A27985B87006D071E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2BB247D27985B87006D071E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2BB247F27985B87006D071E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2BB248227985B87006D071E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2BB248427985B87006D071E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		362347101D7D44E700A047DE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				362347181D7D44E700A047DE /* NEKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3623471F1D7D458E00A047DE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				362347271D7D458E00A047DE /* NEKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		36463A2C1CDCD5EB0040579C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27E8492279862D5004CAD6C /* Sodium.xcframework in Frameworks */,
+				A27E848A279862D5004CAD6C /* Yaml.xcframework in Frameworks */,
+				A27E849E279862D5004CAD6C /* tun2socks.xcframework in Frameworks */,
+				A27E84AC2798631F004CAD6C /* CocoaLumberjack.xcframework in Frameworks */,
+				A27E848E279862D5004CAD6C /* Resolver.xcframework in Frameworks */,
+				A27E849A279862D5004CAD6C /* CocoaLumberjackSwift.xcframework in Frameworks */,
+				A27E84A2279862D5004CAD6C /* MMDB.xcframework in Frameworks */,
+				A27E8496279862D5004CAD6C /* lwip.xcframework in Frameworks */,
+				A27E84A7279862DD004CAD6C /* CocoaAsyncSocket.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +477,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27E84A9279862DD004CAD6C /* CocoaAsyncSocket.xcframework in Frameworks */,
+				A27E849C279862D5004CAD6C /* CocoaLumberjackSwift.xcframework in Frameworks */,
+				A27E84A0279862D5004CAD6C /* tun2socks.xcframework in Frameworks */,
+				A27E848C279862D5004CAD6C /* Yaml.xcframework in Frameworks */,
+				A27E8490279862D5004CAD6C /* Resolver.xcframework in Frameworks */,
+				A27E8494279862D5004CAD6C /* Sodium.xcframework in Frameworks */,
+				A27E8498279862D5004CAD6C /* lwip.xcframework in Frameworks */,
+				A27E84AE2798631F004CAD6C /* CocoaLumberjack.xcframework in Frameworks */,
 				36A719B71D5EEB5900DC35F5 /* NEKit.framework in Frameworks */,
+				A27E84A4279862D5004CAD6C /* MMDB.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,17 +494,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A29D4F112797FF3B007B4C2E /* CocoaLumberjack.xcframework in Frameworks */,
-				A29D4F122797FF3B007B4C2E /* CocoaLumberjackSwift.xcframework in Frameworks */,
-				A29D4F132797FF3B007B4C2E /* Quick.xcframework in Frameworks */,
-				A29D4F142797FF3B007B4C2E /* Resolver.xcframework in Frameworks */,
-				A29D4F152797FF3B007B4C2E /* tun2socks.xcframework in Frameworks */,
-				A29D4F162797FF3B007B4C2E /* lwip.xcframework in Frameworks */,
-				A29D4F172797FF3B007B4C2E /* Nimble.xcframework in Frameworks */,
-				A29D4F182797FF3B007B4C2E /* MMDB.xcframework in Frameworks */,
-				A29D4F192797FF3B007B4C2E /* CocoaAsyncSocket.xcframework in Frameworks */,
-				A29D4F1A2797FF3B007B4C2E /* Sodium.xcframework in Frameworks */,
-				A29D4F1B2797FF3B007B4C2E /* Yaml.xcframework in Frameworks */,
+				A27E8493279862D5004CAD6C /* Sodium.xcframework in Frameworks */,
+				A27E848B279862D5004CAD6C /* Yaml.xcframework in Frameworks */,
+				A27E849F279862D5004CAD6C /* tun2socks.xcframework in Frameworks */,
+				A27E84AD2798631F004CAD6C /* CocoaLumberjack.xcframework in Frameworks */,
+				A27E848F279862D5004CAD6C /* Resolver.xcframework in Frameworks */,
+				A27E849B279862D5004CAD6C /* CocoaLumberjackSwift.xcframework in Frameworks */,
+				A27E84A3279862D5004CAD6C /* MMDB.xcframework in Frameworks */,
+				A27E8497279862D5004CAD6C /* lwip.xcframework in Frameworks */,
+				A27E84A8279862DD004CAD6C /* CocoaAsyncSocket.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BB247127985B86006D071E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A27E8495279862D5004CAD6C /* Sodium.xcframework in Frameworks */,
+				A27E848D279862D5004CAD6C /* Yaml.xcframework in Frameworks */,
+				A27E84A1279862D5004CAD6C /* tun2socks.xcframework in Frameworks */,
+				A27E84AF2798631F004CAD6C /* CocoaLumberjack.xcframework in Frameworks */,
+				A27E8491279862D5004CAD6C /* Resolver.xcframework in Frameworks */,
+				A27E849D279862D5004CAD6C /* CocoaLumberjackSwift.xcframework in Frameworks */,
+				A27E84A5279862D5004CAD6C /* MMDB.xcframework in Frameworks */,
+				A27E8499279862D5004CAD6C /* lwip.xcframework in Frameworks */,
+				A27E84AA279862DD004CAD6C /* CocoaAsyncSocket.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,17 +528,15 @@
 		360F392A1DD2068D002BED59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A29D4F0E2797FF3B007B4C2E /* CocoaAsyncSocket.xcframework */,
-				A29D4F062797FF3A007B4C2E /* CocoaLumberjack.xcframework */,
-				A29D4F072797FF3A007B4C2E /* CocoaLumberjackSwift.xcframework */,
-				A29D4F0B2797FF3B007B4C2E /* lwip.xcframework */,
-				A29D4F0D2797FF3B007B4C2E /* MMDB.xcframework */,
-				A29D4F0C2797FF3B007B4C2E /* Nimble.xcframework */,
-				A29D4F082797FF3A007B4C2E /* Quick.xcframework */,
-				A29D4F092797FF3A007B4C2E /* Resolver.xcframework */,
-				A29D4F0F2797FF3B007B4C2E /* Sodium.xcframework */,
-				A29D4F0A2797FF3B007B4C2E /* tun2socks.xcframework */,
-				A29D4F102797FF3B007B4C2E /* Yaml.xcframework */,
+				A27E84AB2798631F004CAD6C /* CocoaLumberjack.xcframework */,
+				A27E84A6279862DD004CAD6C /* CocoaAsyncSocket.xcframework */,
+				A27E8487279862D5004CAD6C /* CocoaLumberjackSwift.xcframework */,
+				A27E8486279862D5004CAD6C /* lwip.xcframework */,
+				A27E8489279862D5004CAD6C /* MMDB.xcframework */,
+				A27E8484279862D5004CAD6C /* Resolver.xcframework */,
+				A27E8485279862D5004CAD6C /* Sodium.xcframework */,
+				A27E8488279862D5004CAD6C /* tun2socks.xcframework */,
+				A27E8483279862D5004CAD6C /* Yaml.xcframework */,
 				36C48D9B1CF9483F0071804F /* iOS */,
 				36C48D9C1CF948500071804F /* macOS */,
 			);
@@ -564,14 +570,6 @@
 			path = "NEKitTests-iOS";
 			sourceTree = "<group>";
 		};
-		3623472D1D7D45FD00A047DE /* test */ = {
-			isa = PBXGroup;
-			children = (
-				362347421D7E707600A047DE /* Utils */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
 		3623472E1D7D475100A047DE /* bin */ = {
 			isa = PBXGroup;
 			children = (
@@ -579,15 +577,6 @@
 				362347301D7D475100A047DE /* bootstrap-if-needed */,
 			);
 			path = bin;
-			sourceTree = "<group>";
-		};
-		362347421D7E707600A047DE /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				36DB3CED1E0D60ED00D907DB /* IP */,
-				36D4007F1E07E8A100583102 /* HTTPURLSpec.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		362950431D6AE2BC001A30F6 /* Event */ = {
@@ -627,6 +616,7 @@
 		36463A261CDCD5EB0040579C = {
 			isa = PBXGroup;
 			children = (
+				A2BB247527985B86006D071E /* NEKit-iOSapp */,
 				360F392A1DD2068D002BED59 /* Frameworks */,
 				36C48D4E1CF88DED0071804F /* NEKit-iOS */,
 				368225B91D12484D00E7B495 /* NEKit-macOS */,
@@ -637,7 +627,6 @@
 				3623472E1D7D475100A047DE /* bin */,
 				36A718DF1D5AE37C00DC35F5 /* docs */,
 				36463A321CDCD5EB0040579C /* src */,
-				3623472D1D7D45FD00A047DE /* test */,
 				3664F0C61CE37763008BA6D8 /* .swiftlint.yml */,
 				36A719ED1D63310400DC35F5 /* CHANGELOG.md */,
 				36B1624A1CDDA13500F24C97 /* Cartfile */,
@@ -659,8 +648,7 @@
 				36463A301CDCD5EB0040579C /* NEKit.framework */,
 				36C48D4D1CF88DED0071804F /* NEKit.framework */,
 				36A719981D5EEB4900DC35F5 /* NEKitDemo.app */,
-				362347131D7D44E700A047DE /* NEKitTest-macOS.xctest */,
-				362347221D7D458E00A047DE /* NEKitTests-iOS.xctest */,
+				A2BB247427985B86006D071E /* NEKit-iOSapp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -946,7 +934,7 @@
 		36D4007B1E07D83B00583102 /* IP */ = {
 			isa = PBXGroup;
 			children = (
-				3636DA5D1CE87C08007F9787 /* IPAddress.swift */,
+				3636DA5D1CE87C08007F9787 /* NEIPAddress.swift */,
 				36D591BD1D6C40F2003E92B2 /* IPRange.swift */,
 				36DB3CE91E0CD19000D907DB /* IPMask.swift */,
 				36411A721D1FBFB0005F4108 /* IPPool.swift */,
@@ -955,13 +943,18 @@
 			name = IP;
 			sourceTree = "<group>";
 		};
-		36DB3CED1E0D60ED00D907DB /* IP */ = {
+		A2BB247527985B86006D071E /* NEKit-iOSapp */ = {
 			isa = PBXGroup;
 			children = (
-				3623473F1D7E706300A047DE /* IPRangeSpec.swift */,
-				36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */,
+				A2BB247627985B86006D071E /* AppDelegate.swift */,
+				A2BB247827985B86006D071E /* SceneDelegate.swift */,
+				A2BB247A27985B87006D071E /* ViewController.swift */,
+				A2BB247C27985B87006D071E /* Main.storyboard */,
+				A2BB247F27985B87006D071E /* Assets.xcassets */,
+				A2BB248127985B87006D071E /* LaunchScreen.storyboard */,
+				A2BB248427985B87006D071E /* Info.plist */,
 			);
-			name = IP;
+			path = "NEKit-iOSapp";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -986,44 +979,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		362347121D7D44E700A047DE /* NEKitTest-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3623471D1D7D44E700A047DE /* Build configuration list for PBXNativeTarget "NEKitTest-macOS" */;
-			buildPhases = (
-				3623470F1D7D44E700A047DE /* Sources */,
-				362347101D7D44E700A047DE /* Frameworks */,
-				362347111D7D44E700A047DE /* Resources */,
-				362347871D7EA64400A047DE /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3623471A1D7D44E700A047DE /* PBXTargetDependency */,
-			);
-			name = "NEKitTest-macOS";
-			productName = "NEKitTest-macOS";
-			productReference = 362347131D7D44E700A047DE /* NEKitTest-macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		362347211D7D458E00A047DE /* NEKitTests-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3623472A1D7D458E00A047DE /* Build configuration list for PBXNativeTarget "NEKitTests-iOS" */;
-			buildPhases = (
-				3623471E1D7D458E00A047DE /* Sources */,
-				3623471F1D7D458E00A047DE /* Frameworks */,
-				362347201D7D458E00A047DE /* Resources */,
-				362347931D7FC5BF00A047DE /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				362347291D7D458E00A047DE /* PBXTargetDependency */,
-			);
-			name = "NEKitTests-iOS";
-			productName = "NEKitTests-iOS";
-			productReference = 362347221D7D458E00A047DE /* NEKitTests-iOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		36463A2F1CDCD5EB0040579C /* NEKit-macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36463A441CDCD5EB0040579C /* Build configuration list for PBXNativeTarget "NEKit-macOS" */;
@@ -1087,24 +1042,33 @@
 			productReference = 36C48D4D1CF88DED0071804F /* NEKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A2BB247327985B86006D071E /* NEKit-iOSapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2BB248527985B87006D071E /* Build configuration list for PBXNativeTarget "NEKit-iOSapp" */;
+			buildPhases = (
+				A2BB247027985B86006D071E /* Sources */,
+				A2BB247127985B86006D071E /* Frameworks */,
+				A2BB247227985B86006D071E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NEKit-iOSapp";
+			productName = "NEKit-iOSapp";
+			productReference = A2BB247427985B86006D071E /* NEKit-iOSapp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		36463A271CDCD5EB0040579C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Zhuhao Wang";
 				TargetAttributes = {
-					362347121D7D44E700A047DE = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1020;
-					};
-					362347211D7D458E00A047DE = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1020;
-					};
 					36463A2F1CDCD5EB0040579C = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 1020;
@@ -1118,6 +1082,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
+					};
+					A2BB247327985B86006D071E = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -1137,27 +1104,12 @@
 				36463A2F1CDCD5EB0040579C /* NEKit-macOS */,
 				36C48D4C1CF88DED0071804F /* NEKit-iOS */,
 				36A719971D5EEB4900DC35F5 /* NEKitDemo */,
-				362347121D7D44E700A047DE /* NEKitTest-macOS */,
-				362347211D7D458E00A047DE /* NEKitTests-iOS */,
+				A2BB247327985B86006D071E /* NEKit-iOSapp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		362347111D7D44E700A047DE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		362347201D7D458E00A047DE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		36463A2E1CDCD5EB0040579C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1178,6 +1130,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BB247227985B86006D071E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2BB248327985B87006D071E /* LaunchScreen.storyboard in Resources */,
+				A2BB248027985B87006D071E /* Assets.xcassets in Resources */,
+				A2BB247E27985B87006D071E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1269,26 +1231,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3623470F1D7D44E700A047DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36D400801E07E8A100583102 /* HTTPURLSpec.swift in Sources */,
-				36DB3CEF1E0D610500D907DB /* IPAddressSpec.swift in Sources */,
-				362347401D7E706300A047DE /* IPRangeSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3623471E1D7D458E00A047DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36D400811E07E8A100583102 /* HTTPURLSpec.swift in Sources */,
-				36DB3CF01E0D610500D907DB /* IPAddressSpec.swift in Sources */,
-				362347411D7E706300A047DE /* IPRangeSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		36463A2B1CDCD5EB0040579C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1302,7 +1244,7 @@
 				36C63DCB1CFD602500A00CA2 /* DNSSession.swift in Sources */,
 				36411A701D1ACD27005F4108 /* DNSResolver.swift in Sources */,
 				366EB5B71CDE150C00E0E942 /* HTTPAdapterFactory.swift in Sources */,
-				3636DA5E1CE87C08007F9787 /* IPAddress.swift in Sources */,
+				3636DA5E1CE87C08007F9787 /* NEIPAddress.swift in Sources */,
 				36411A551D12C123005F4108 /* Atomic.swift in Sources */,
 				36DB3CE41E0BCB1600D907DB /* UInt128.swift in Sources */,
 				36D4007D1E07E48B00583102 /* HTTPURL.swift in Sources */,
@@ -1482,7 +1424,7 @@
 				3611765B1DFFE98700A1A058 /* Buffer.swift in Sources */,
 				3611765E1E000A5400A1A058 /* ProtocolObfuscater.swift in Sources */,
 				36C48D801CF88EDE0071804F /* SocketProtocol.swift in Sources */,
-				36C48D6A1CF88ECB0071804F /* IPAddress.swift in Sources */,
+				36C48D6A1CF88ECB0071804F /* NEIPAddress.swift in Sources */,
 				36C63DFD1D00797D00A00CA2 /* Checksum.swift in Sources */,
 				36C48D7D1CF88EDE0071804F /* AdapterSocket.swift in Sources */,
 				36C48D761CF88ED40071804F /* RawTCPSocketProtocol.swift in Sources */,
@@ -1515,19 +1457,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2BB247027985B86006D071E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2BB247B27985B87006D071E /* ViewController.swift in Sources */,
+				A2BB247727985B86006D071E /* AppDelegate.swift in Sources */,
+				A2BB247927985B87006D071E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3623471A1D7D44E700A047DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36463A2F1CDCD5EB0040579C /* NEKit-macOS */;
-			targetProxy = 362347191D7D44E700A047DE /* PBXContainerItemProxy */;
-		};
-		362347291D7D458E00A047DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36C48D4C1CF88DED0071804F /* NEKit-iOS */;
-			targetProxy = 362347281D7D458E00A047DE /* PBXContainerItemProxy */;
-		};
 		36A719BA1D5EEB5900DC35F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 36463A2F1CDCD5EB0040579C /* NEKit-macOS */;
@@ -1545,104 +1487,25 @@
 			path = .;
 			sourceTree = "<group>";
 		};
+		A2BB247C27985B87006D071E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2BB247D27985B87006D071E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2BB248127985B87006D071E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2BB248227985B87006D071E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3623471B1D7D44E700A047DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "NEKitTest-macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.NEKit.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		3623471C1D7D44E700A047DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "NEKitTest-macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.NEKit.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		3623472B1D7D458E00A047DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "NEKitTests-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.NEKit.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		3623472C1D7D458E00A047DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "NEKitTests-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.NEKit.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		36463A421CDCD5EB0040579C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1968,27 +1831,96 @@
 			};
 			name = Release;
 		};
+		A2BB248627985B87006D071E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 297SS7EN9H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NEKit-iOSapp/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bcdh.nekit.app.NEKit-iOSapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2BB248727985B87006D071E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 297SS7EN9H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NEKit-iOSapp/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bcdh.nekit.app.NEKit-iOSapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3623471D1D7D44E700A047DE /* Build configuration list for PBXNativeTarget "NEKitTest-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3623471B1D7D44E700A047DE /* Debug */,
-				3623471C1D7D44E700A047DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3623472A1D7D458E00A047DE /* Build configuration list for PBXNativeTarget "NEKitTests-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3623472B1D7D458E00A047DE /* Debug */,
-				3623472C1D7D458E00A047DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		36463A2A1CDCD5EB0040579C /* Build configuration list for PBXProject "NEKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2021,6 +1953,15 @@
 			buildConfigurations = (
 				36C48D531CF88DED0071804F /* Debug */,
 				36C48D541CF88DED0071804F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2BB248527985B87006D071E /* Build configuration list for PBXNativeTarget "NEKit-iOSapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2BB248627985B87006D071E /* Debug */,
+				A2BB248727985B87006D071E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

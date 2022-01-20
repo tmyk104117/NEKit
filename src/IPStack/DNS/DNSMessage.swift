@@ -36,7 +36,7 @@ open class DNSMessage {
         return len
     }
 
-    var resolvedIPv4Address: IPAddress? {
+    var resolvedIPv4Address: NEIPAddress? {
         for answer in answers {
             if let address = answer.ipv4Address {
                 return address
@@ -283,7 +283,7 @@ open class DNSResource {
         self.nameBytesLength = name.utf8.count + 2
     }
 
-    static func ARecord(_ name: String, TTL: UInt32 = 300, address: IPAddress) -> DNSResource {
+    static func ARecord(_ name: String, TTL: UInt32 = 300, address: NEIPAddress) -> DNSResource {
         return DNSResource(name: name, type: .a, klass: .internet, TTL: TTL, data: address.dataInNetworkOrder)
     }
 
@@ -313,11 +313,11 @@ open class DNSResource {
         return nameBytesLength + 10 + Int(dataLength)
     }
 
-    var ipv4Address: IPAddress? {
+    var ipv4Address: NEIPAddress? {
         guard type == .a else {
             return nil
         }
-        return IPAddress(fromBytesInNetworkOrder: (data as NSData).bytes)
+        return NEIPAddress(fromBytesInNetworkOrder: (data as NSData).bytes)
     }
 }
 

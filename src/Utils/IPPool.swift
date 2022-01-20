@@ -7,10 +7,10 @@ import CocoaLumberjackSwift
  - note: It is NOT thread-safe.
  */
 public final class IPPool {
-    let family: IPAddress.Family
+    let family: NEIPAddress.Family
     let range: IPRange
-    var currentEnd: IPAddress
-    var pool: [IPAddress] = []
+    var currentEnd: NEIPAddress
+    var pool: [NEIPAddress] = []
 
     public init(range: IPRange) {
         family = range.family
@@ -19,7 +19,7 @@ public final class IPPool {
         currentEnd = range.startIP
     }
 
-    func fetchIP() -> IPAddress? {
+    func fetchIP() -> NEIPAddress? {
         if pool.count == 0 {
             if range.contains(ip: currentEnd) {
                 defer {
@@ -34,7 +34,7 @@ public final class IPPool {
         return pool.removeLast()
     }
 
-    func release(ip: IPAddress) {
+    func release(ip: NEIPAddress) {
         guard ip.family == family else {
             return
         }
@@ -42,7 +42,7 @@ public final class IPPool {
         pool.append(ip)
     }
 
-    func contains(ip: IPAddress) -> Bool {
+    func contains(ip: NEIPAddress) -> Bool {
         return range.contains(ip: ip)
     }
 }

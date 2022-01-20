@@ -61,7 +61,7 @@ open class IPRangeListRule: Rule {
      - returns: The configured adapter if matched, return `nil` if not matched.
      */
     override open func match(_ session: ConnectSession) -> AdapterFactory? {
-        guard let ip = IPAddress(fromString: session.ipAddress) else {
+        guard let ip = NEIPAddress(fromString: session.ipAddress) else {
             return nil
         }
 

@@ -36,8 +36,8 @@ public class TUNTCPSocket: RawTCPSocketProtocol, TSTCPSocketDelegate {
     }
 
     /// The source address.
-    public var sourceIPAddress: IPAddress? {
-        return IPAddress(fromInAddr: tsSocket.sourceAddress)
+    public var sourceIPAddress: NEIPAddress? {
+        return NEIPAddress(fromInAddr: tsSocket.sourceAddress)
     }
 
     /// The source port.
@@ -46,8 +46,8 @@ public class TUNTCPSocket: RawTCPSocketProtocol, TSTCPSocketDelegate {
     }
 
     /// The destination address.
-    public var destinationIPAddress: IPAddress? {
-        return IPAddress(fromInAddr: tsSocket.destinationAddress)
+    public var destinationIPAddress: NEIPAddress? {
+        return NEIPAddress(fromInAddr: tsSocket.destinationAddress)
     }
 
     /// The destination port.

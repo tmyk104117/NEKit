@@ -38,11 +38,11 @@ open class GCDTCPSocket: NSObject, GCDAsyncSocketDelegate, RawTCPSocketProtocol 
     }
 
     /// The source address.
-    open var sourceIPAddress: IPAddress? {
+    open var sourceIPAddress: NEIPAddress? {
         guard let localHost = socket.localHost else {
             return nil
         }
-        return IPAddress(fromString: localHost)
+        return NEIPAddress(fromString: localHost)
     }
 
     /// The source port.
@@ -53,7 +53,7 @@ open class GCDTCPSocket: NSObject, GCDAsyncSocketDelegate, RawTCPSocketProtocol 
     /// The destination address.
     ///
     /// - note: Always returns `nil`.
-    open var destinationIPAddress: IPAddress? {
+    open var destinationIPAddress: NEIPAddress? {
         return nil
     }
 

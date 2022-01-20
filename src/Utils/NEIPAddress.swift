@@ -1,6 +1,6 @@
 import Foundation
 
-public class IPAddress: CustomStringConvertible, Comparable {
+public class NEIPAddress: CustomStringConvertible, Comparable {
     public enum Family {
         case IPv4, IPv6
     }
@@ -138,34 +138,34 @@ public class IPAddress: CustomStringConvertible, Comparable {
         }
     }
 
-    public func advanced(by interval: IPInterval) -> IPAddress? {
+    public func advanced(by interval: IPInterval) -> NEIPAddress? {
         switch (interval, address) {
         case (.IPv4(let range), .IPv4(let addr)):
-            return IPAddress(ipv4InNetworkOrder: (addr.s_addr.byteSwapped &+ range).byteSwapped)
+            return NEIPAddress(ipv4InNetworkOrder: (addr.s_addr.byteSwapped &+ range).byteSwapped)
         case (.IPv6(let range), .IPv6):
-            return IPAddress(ipv6InNetworkOrder: (address.asUInt128 &+ range).byteSwapped)
+            return NEIPAddress(ipv6InNetworkOrder: (address.asUInt128 &+ range).byteSwapped)
         default:
             return nil
         }
     }
 
-    public func advanced(by interval: UInt) -> IPAddress? {
+    public func advanced(by interval: UInt) -> NEIPAddress? {
         switch self.address {
         case .IPv4(let addr):
-            return IPAddress(ipv4InNetworkOrder: (addr.s_addr.byteSwapped &+ UInt32(interval)).byteSwapped)
+            return NEIPAddress(ipv4InNetworkOrder: (addr.s_addr.byteSwapped &+ UInt32(interval)).byteSwapped)
         case .IPv6:
-            return IPAddress(ipv6InNetworkOrder: (address.asUInt128 &+ UInt128(interval)).byteSwapped)
+            return NEIPAddress(ipv6InNetworkOrder: (address.asUInt128 &+ UInt128(interval)).byteSwapped)
         }
     }
 }
 
-public func == (lhs: IPAddress, rhs: IPAddress) -> Bool {
+public func == (lhs: NEIPAddress, rhs: NEIPAddress) -> Bool {
     return lhs.address == rhs.address
 }
 
 // Comparing IP addresses of different families are undefined.
 // But currently, IPv4 is considered smaller than IPv6 address. Do NOT depend on this behavior.
-public func < (lhs: IPAddress, rhs: IPAddress) -> Bool {
+public func < (lhs: NEIPAddress, rhs: NEIPAddress) -> Bool {
     switch (lhs.address, rhs.address) {
     case (.IPv4(let addrl), .IPv4(let addrr)):
         return addrl.s_addr.byteSwapped < addrr.s_addr.byteSwapped
@@ -183,7 +183,7 @@ public func < (lhs: IPAddress, rhs: IPAddress) -> Bool {
     }
 }
 
-public func == (lhs: IPAddress.Address, rhs: IPAddress.Address) -> Bool {
+public func == (lhs: NEIPAddress.Address, rhs: NEIPAddress.Address) -> Bool {
     switch (lhs, rhs) {
     case (.IPv4(let addrl), .IPv4(let addrr)):
         return addrl.s_addr == addrr.s_addr
@@ -194,7 +194,7 @@ public func == (lhs: IPAddress.Address, rhs: IPAddress.Address) -> Bool {
     }
 }
 
-extension IPAddress: Hashable {
+extension NEIPAddress: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch address {
         case .IPv4(let addr):

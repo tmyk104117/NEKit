@@ -51,12 +51,12 @@ open class IPPacket {
      
      - returns: The source IP address of the packet. Returns `nil` if failed to parse the packet.
      */
-    public static func peekSourceAddress(_ data: Data) -> IPAddress? {
+    public static func peekSourceAddress(_ data: Data) -> NEIPAddress? {
         guard data.count >= 20 else {
             return nil
         }
 
-        return IPAddress(fromBytesInNetworkOrder: (data as NSData).bytes.advanced(by: 12))
+        return NEIPAddress(fromBytesInNetworkOrder: (data as NSData).bytes.advanced(by: 12))
     }
 
     /**
@@ -66,12 +66,12 @@ open class IPPacket {
      
      - returns: The destination IP address of the packet. Returns `nil` if failed to parse the packet.
      */
-    public static func peekDestinationAddress(_ data: Data) -> IPAddress? {
+    public static func peekDestinationAddress(_ data: Data) -> NEIPAddress? {
         guard data.count >= 20 else {
             return nil
         }
 
-        return IPAddress(fromBytesInNetworkOrder: (data as NSData).bytes.advanced(by: 16))
+        return NEIPAddress(fromBytesInNetworkOrder: (data as NSData).bytes.advanced(by: 16))
     }
 
     /**
@@ -162,10 +162,10 @@ open class IPPacket {
     var TTL: UInt8 = 64
 
     /// Source IP address.
-    var sourceAddress: IPAddress!
+    var sourceAddress: NEIPAddress!
 
     /// Destination IP address.
-    var destinationAddress: IPAddress!
+    var destinationAddress: NEIPAddress!
 
     /// Transport protocol of the packet.
     var transportProtocol: TransportProtocol!
@@ -227,8 +227,8 @@ open class IPPacket {
 
         switch version {
         case .iPv4:
-            sourceAddress = IPAddress(ipv4InNetworkOrder: CFSwapInt32(scanner.read32()!))
-            destinationAddress = IPAddress(ipv4InNetworkOrder: CFSwapInt32(scanner.read32()!))
+            sourceAddress = NEIPAddress(ipv4InNetworkOrder: CFSwapInt32(scanner.read32()!))
+            destinationAddress = NEIPAddress(ipv4InNetworkOrder: CFSwapInt32(scanner.read32()!))
         default:
             // IPv6 is not supported yet.
             DDLogWarn("IPv6 is not supported yet.")

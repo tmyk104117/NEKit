@@ -1,9 +1,9 @@
 import Foundation
 
 struct ConnectInfo {
-    let sourceAddress: IPAddress
+    let sourceAddress: NEIPAddress
     let sourcePort: Port
-    let destinationAddress: IPAddress
+    let destinationAddress: NEIPAddress
     let destinationPort: Port
 }
 

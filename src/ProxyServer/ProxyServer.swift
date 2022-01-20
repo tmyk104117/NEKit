@@ -14,7 +14,7 @@ open class ProxyServer: NSObject, TunnelDelegate {
     public let port: Port
 
     /// The address of proxy server.
-    public let address: IPAddress?
+    public let address: NEIPAddress?
 
     /// The type of the proxy server.
     ///
@@ -38,7 +38,7 @@ open class ProxyServer: NSObject, TunnelDelegate {
      
      - warning: If you are using Network Extension, you have to set address or you may not able to connect to the proxy server.
      */
-    public init(address: IPAddress?, port: Port) {
+    public init(address: NEIPAddress?, port: Port) {
         self.address = address
         self.port = port
         type = "\(Swift.type(of: self))"

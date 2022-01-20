@@ -4,8 +4,8 @@ import CocoaLumberjackSwift
 open class DNSSession {
     public let requestMessage: DNSMessage
     var requestIPPacket: IPPacket?
-    open var realIP: IPAddress?
-    open var fakeIP: IPAddress?
+    open var realIP: NEIPAddress?
+    open var fakeIP: NEIPAddress?
     open var realResponseMessage: DNSMessage?
     var realResponseIPPacket: IPPacket?
     open var matchedRule: Rule?

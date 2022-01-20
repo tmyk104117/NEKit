@@ -12,13 +12,13 @@ open class DNSServer: DNSResolverDelegate, IPStackProtocol {
     public static var currentServer: DNSServer?
 
     /// The address of DNS server.
-    let serverAddress: IPAddress
+    let serverAddress: NEIPAddress
 
     /// The port of DNS server
     let serverPort: Port
 
     fileprivate let queue: DispatchQueue = QueueFactory.getQueue()
-    fileprivate var fakeSessions: [IPAddress: DNSSession] = [:]
+    fileprivate var fakeSessions: [NEIPAddress: DNSSession] = [:]
     fileprivate var pendingSessions: [UInt16: DNSSession] = [:]
     fileprivate let pool: IPPool?
     fileprivate var resolvers: [DNSResolverProtocol] = []
@@ -35,7 +35,7 @@ open class DNSServer: DNSResolverDelegate, IPStackProtocol {
      - parameter port:       The listening port of the server.
      - parameter fakeIPPool: The pool of fake IP addresses. Set to nil if no fake IP is needed.
      */
-    public init(address: IPAddress, port: Port, fakeIPPool: IPPool? = nil) {
+    public init(address: NEIPAddress, port: Port, fakeIPPool: IPPool? = nil) {
         serverAddress = address
         serverPort = port
         pool = fakeIPPool
@@ -47,7 +47,7 @@ open class DNSServer: DNSResolverDelegate, IPStackProtocol {
      - parameter address: The fake IP address.
      - parameter delay:   How long should the fake IP be valid.
      */
-    fileprivate func cleanUpFakeIP(_ address: IPAddress, after delay: Int) {
+    fileprivate func cleanUpFakeIP(_ address: NEIPAddress, after delay: Int) {
         queue.asyncAfter(deadline: DispatchTime.now() + Double(Int64(delay) * Int64(NSEC_PER_SEC)) / Double(NSEC_PER_SEC)) {
             [weak self] in
             _ = self?.fakeSessions.removeValue(forKey: address)
@@ -196,11 +196,11 @@ open class DNSServer: DNSResolverDelegate, IPStackProtocol {
         return matchedType.contains(session.requestMessage.type!)
     }
 
-    func isFakeIP(_ ipAddress: IPAddress) -> Bool {
+    func isFakeIP(_ ipAddress: NEIPAddress) -> Bool {
         return pool?.contains(ip: ipAddress) ?? false
     }
 
-    func lookupFakeIP(_ address: IPAddress) -> DNSSession? {
+    func lookupFakeIP(_ address: NEIPAddress) -> DNSSession? {
         var session: DNSSession?
         QueueFactory.executeOnQueueSynchronizedly {
             session = self.fakeSessions[address]

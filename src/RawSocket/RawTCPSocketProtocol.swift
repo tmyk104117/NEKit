@@ -13,13 +13,13 @@ public protocol RawTCPSocketProtocol : class {
     var isConnected: Bool { get }
 
     /// The source address.
-    var sourceIPAddress: IPAddress? { get }
+    var sourceIPAddress: NEIPAddress? { get }
 
     /// The source port.
     var sourcePort: Port? { get }
 
     /// The destination address.
-    var destinationIPAddress: IPAddress? { get }
+    var destinationIPAddress: NEIPAddress? { get }
 
     /// The destination port.
     var destinationPort: Port? { get }

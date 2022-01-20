@@ -5,13 +5,13 @@ public enum IPRangeError: Error {
 }
 
 public class IPRange {
-    public let startIP: IPAddress
+    public let startIP: NEIPAddress
     // including, so we can include 255.255.255.255 in range.
-    public let endIP: IPAddress
+    public let endIP: NEIPAddress
 
-    public let family: IPAddress.Family
+    public let family: NEIPAddress.Family
 
-    public init(startIP: IPAddress, endIP: IPAddress) throws {
+    public init(startIP: NEIPAddress, endIP: NEIPAddress) throws {
         guard startIP.family == endIP.family else {
             throw IPRangeError.addressIncompatible
         }
@@ -25,7 +25,7 @@ public class IPRange {
         family = startIP.family
     }
 
-    public convenience init(startIP: IPAddress, interval: IPInterval) throws {
+    public convenience init(startIP: NEIPAddress, interval: IPInterval) throws {
         guard let endIP = startIP.advanced(by: interval) else {
             throw IPRangeError.intervalInvalid
         }
@@ -33,7 +33,7 @@ public class IPRange {
         try self.init(startIP: startIP, endIP: endIP)
     }
 
-    public convenience init(startIP: IPAddress, mask: IPMask) throws {
+    public convenience init(startIP: NEIPAddress, mask: IPMask) throws {
         guard let (startIP, endIP) = mask.mask(baseIP: startIP) else {
             throw IPRangeError.invalidMask
         }
@@ -41,7 +41,7 @@ public class IPRange {
         try self.init(startIP: startIP, endIP: endIP)
     }
 
-    public func contains(ip: IPAddress) -> Bool {
+    public func contains(ip: NEIPAddress) -> Bool {
         guard ip.family == family else {
             return false
         }
@@ -57,7 +57,7 @@ extension IPRange {
             throw IPRangeError.invalidCIDRFormat
         }
 
-        guard let ip = IPAddress(fromString: info[0]) else {
+        guard let ip = NEIPAddress(fromString: info[0]) else {
             throw IPRangeError.invalidCIDRFormat
         }
 
@@ -84,7 +84,7 @@ extension IPRange {
             throw IPRangeError.invalidRangeFormat
         }
 
-        guard let startIP = IPAddress(fromString: info[0]) else {
+        guard let startIP = NEIPAddress(fromString: info[0]) else {
             throw IPRangeError.invalidRangeFormat
         }
 
@@ -111,7 +111,7 @@ extension IPRange {
         } else if rep.contains("+") {
             try self.init(withRangeString: rep)
         } else {
-            guard let ip = IPAddress(fromString: rep) else {
+            guard let ip = NEIPAddress(fromString: rep) else {
                 throw IPRangeError.invalidFormat
             }
 

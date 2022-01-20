@@ -59,11 +59,11 @@ public class SOCKS5Adapter: AdapterSocket {
             var response: [UInt8]
             if session.isIPv4() {
                 response = [0x05, 0x01, 0x00, 0x01]
-                let address = IPAddress(fromString: session.host)!
+                let address = NEIPAddress(fromString: session.host)!
                 response += [UInt8](address.dataInNetworkOrder)
             } else if session.isIPv6() {
                 response = [0x05, 0x01, 0x00, 0x04]
-                let address = IPAddress(fromString: session.host)!
+                let address = NEIPAddress(fromString: session.host)!
                 response += [UInt8](address.dataInNetworkOrder)
             } else {
                 response = [0x05, 0x01, 0x00, 0x03]
